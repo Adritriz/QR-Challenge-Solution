@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+/*|| RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ||VARIABLES*/
+
+:root {
+    /* FONTS */
+    --FF: 'Outfit', sans-serif;
+    --FS: 15px;
+
+    /*COLORS */ 
+    --BGCOLOR: hsl(212, 45%, 89%);
+    --BODY-BGCOLOR: hsl(0, 0%, 100%);
+    --FONT-COLOR: #000;
+
+    /* STANDARD MARGIN */
+    --BODY-MARGIN: 5em 1em;
+    --QR-MARGIN: clamp(1em, 2vh, 1.5em);
+
+    /* PADDING*/ 
+    --PADDING: 0.5em 1em;
+
+}
+
+/* || UTILITY CLASSES */ 
+
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+/* || GENERAL STYLES */ 
+
+html {
+    background-color: var(--BGCOLOR);
+    font-size: var(--FS);
+    font-family: var(--FF);
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: var(--BODY-BGCOLOR);
+    color: var(--FONT-COLOR);
+    width: 300px;
+    height: auto;
+    border: 1px solid white;
+    margin: var(--BODY-MARGIN);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 30px 10px 5px hsl(212, 37%, 85%);;
+}
+
+p,
+h2 {
+    padding: var(--PADDING);
+    text-align: center;
+}
+
+/* || QR CODE */ 
+
+.qrcode {
+   margin: 1em;
+   border: 1px solid transparent;
+   border-radius: 10px;
+}
+
+
+
+
+
+
+
